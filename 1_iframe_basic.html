@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lagn="ko">
+</html>
+	<head>
+		<meta charset="utf-8">
+		<title>iframe</title>
+	</head>
+	<body>
+
+		<!--
+			* src속성: 불러올 이미지 자원
+				src속성 값 => 상대경로나 절대경로(다시 강의로 설명함)
+			* <img> src 속성과 동일하다.
+			* 다만, 이미지와 관련된 확장자(.jpg/.png/.gif/.svg 등)의 파일만 불러오는 <img> 태그와 달리
+				다양한 문서파일(.html/.php 등)과 웹사이트의 페이지를 불러온다.
+		-->
+		<iframe src="iframe-src.html"></iframe>
+		<br>
+		<iframe src="http://www.greenart.co.kr"></iframe>
+		<br>
+		<!--
+			width 속성
+			height 속성
+			* <img> 속성과 동일하다.
+			* 다만, <img> 태그와 달리 width속성과 height속성을 지정하지 않으면 브라우저에서 미리 정의된 iframe의 사이즈에 맞추어 출력된다.
+			* width속성과 height속성의 값은 숫자로 지정하고 단위는 픽셀(pixels, px)이다.
+			* width속성과 height속성의 값은 숫자로 지정하고 %를 단위로 넣을 수 있다.
+				예를 들면 width="50%"
+			* 물론 iframe요소의 width와 height는 CSS로 컨트롤 할 수 있다.
+		-->
+		<iframe src="iframe-src.html" width="100%"></iframe>
+	</body>
+</html>

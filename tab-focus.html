@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>tab focus의 이해</title>
+    </head>
+    <body>
+        <h1 tabindex="0">tab focus의 이해</h1>
+        <p>
+            웹페이지(html문서)에서 사용자는 컨텐츠의 이동을 주로 마우스를 활용한다
+            <br>
+            마우스를 활용할 수 없는 환경 즉, 마우스가 없거나 손이 불편한 사람은
+            키보드를 이용하거나 보조기구를 이용해서 컨텐츠의 이동을 할 수 있어야 한다
+            tab focus를 활용하면 할 수 있는데, 
+            <br> 이에 대해 알아보자
+        </p>
+        <h2>tab focus란</h2>
+        <p>
+            키보드의 tab를 누르면 html의 특정 요소가 포커스 focus 된다
+            <br>
+            반복해서 누르면 html의 특정 요소가 바뀌면서 컨텐츠를 이동시킨다. 이러한 방법을 tab focus라 말한다. 보조기구를 사용할 경우에도 키보드의 tab키를 누르는 것과 동일한 기능을 가지게 되는데, 이러한 tab focus는 규칙이 있으며, 이 규칙을 활용하면 마우스를 활용할 수 없는 환경에서도 웹페이지에서 사용자는 컴텐츠를 이동할 수 있다
+            <br>
+            <strong> 웹접근성이 더 좋아진다는 의미이며, 이 기법은 우리나라에서 매우 중요하다</strong>
+        </p>
+        <h2>tab focus되는 요소들</h2>
+        <ul>
+            <li>
+                tabindex속성의 값이 0인 요소들(컨트롤 요소들, a태그, 기타 등등...)
+            </li>
+            <li>
+                tabindex속성이 없는 요소지만 tabindex의 값을 0이상의 정수로 만들어 놓은 요소들
+            </li>
+        </ul>
+        <input type="text" tabindex="2">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <a href=""></a>
+        <input type="radio" checked tabindex="1">
+        <button type="button" tabindex="-1">button</button>
+        <!-- 
+            값이 0에 가까운 양의 정수일수록 우선순위로 focus된다.
+            0으로 설정하거나 기본값인 요소들은 마크업한 순서대로 tab focus된다.
+         -->
+        <h2>tabindex 값의 이해</h2>
+        <ul>
+            <li>음의 정수일 경우 tab focus를 상실하게 한다.</li>
+            <li>0일 경우 tabfocus를 유발하게 한다.</li>
+            <li>1 이상의 정수일 경우 1이 가장 먼저 focus되고 나머지 순서는 정수의 값과 동일하다.</li>
+        </ul>
+    </body>
+</html>

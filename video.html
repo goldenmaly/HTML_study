@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>video</title>
+		<link rel="stylesheet" href="css/video.css">
+	</head>
+	<body>
+		<!--
+			video
+			supported video formats in HTML: https://www.w3schools.com/tags/tag_video.asp
+		-->
+		<!--
+			audio
+			supported audio formats in HTML: https://www.w3schools.com/html/html5_audio.asp
+		-->
+		<video src="videos/flower.mp4" controls></video>
+		<video src="videos/video.mp4" controls muted autoplay loop></video>
+		<video src="videos/video.mp4" autoplay loop muted playsinline></video>
+
+		<!-- autoplay를 실행하려면 : autoplay muted loop playsinline 모두 마크업해야함
+			# playsinline 은 ios safari에만 적용되는 속성 attribute
+				,비디오가 플레이될 때 전체화면으로 플레이되는 것을 방지함
+			# 이럼에도 불구하고 ios에서 autoplay가 안 될 경우는,
+				유저가 저전력 모드(low power mode)로 핸드폰을 설정해 둔 것이다.		
+		-->
+
+		<form action="">
+			<select name="" id="">
+				<optgroup label="여행"></optgroup>
+				<option>rmflrh</option>
+				<option value="" selected>nnanan</option>
+			</select>
+			<input type="radio" checked><label for="">남자</label>
+		</form>
+	</body>
+</html>

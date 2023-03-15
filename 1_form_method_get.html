@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML FORM - 데이터전송</title>
+	</head>
+	<body>
+		<h3>HTML Form method-get-</h3>
+		<form method="get">
+
+			<!--
+				* 폼데이터를 전송하기 위해서는
+				1. <button type="submit">레이블 콘텐츠</button>
+				2. <input type="submit" value="레이블 콘텐츠" />
+				위 두 컨트롤(동일한 역할을 하는데 폼데이터를 action속성의 값으로 제출함) 중
+				하나가 있어야 합니다.
+
+				이 폼에서는 <input type="submit" value="확인" />을 사용했으나,
+				<button type="submit">확인</button>을 사용해도 동일합니다.
+			-->
+			<input type="text" name="text_value">
+			<br />
+			<input type="checkbox" id="html" name="checkbox_value" value="HTML" />
+			<label for="html">HTML</label>
+			<input type="checkbox" id="css" name="checkbox_value" value="CSS" />
+			<label for="css">CSS</label>
+			<input type="checkbox" id="webdesign" name="checkbox_value" value="웹디자인" />
+			<label for="webdesign">웹디자인</label>
+			<br />
+			<input type="submit" value="확인" />
+		</form>
+	</body>
+</html>

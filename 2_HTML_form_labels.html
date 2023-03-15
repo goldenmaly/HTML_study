@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML FORM - Label</title>
+	</head>
+	<body>
+		<h3>HTML Form 레이블(Label)</h3>
+		<form>
+			<fieldset>
+				<legend>레이블 요소(태그)를 사용하지 않는 요소</legend>
+				<p>&lt;button&gt;요소는 content로 레이블을 보여줍니다.</p>
+				<button type="button">button</button>
+				<br />
+				<button type="submit">submit button</button>
+				<br />
+				<button type="reset">reset button</button>
+				<br />
+				<hr />
+				<p>&lt;input&gt;요소(type속성이 "submit"과 "reset")는 value속성의 값으로 레이블을 보여줍니다.</p>
+				<input type="submit" value="submit" />
+				<br />
+				<input type="reset" value="reset" />
+			</fieldset>
+			<fieldset>
+				<legend>나머지 요소는 레이블 요소(태그)로 레이블을 지정합니다.</legend>
+				<input type="checkbox" id="html" name="chk_variable" value="HTML" />
+				<label for="html">HTML</label>
+				<input type="checkbox" id="css" name="chk_variable" value="CSS" />
+				<label for="css">CSS</label>
+				<input type="checkbox" id="webdesign" name="chk_variable" value="웹디자인" />
+				<label for="webdesign">웹디자인</label>
+				<br />
+				<input type="radio" id="radio_html" name="radio_variable" value="HTML" />
+				<label for="radio_html">HTML</label>
+				<input type="radio" id="radio_css" name="radio_variable" value="CSS" />
+				<label for="radio_css">CSS</label>
+				<input type="radio" id="radio_webdesign" name="radio_variable" value="웹디자인" />
+				<label for="radio_webdesign">웹디자인</label>
+				<br />
+				<label for="selectid">지역선택</label>
+				<select name="select_variable" id="selectid">
+					<option value="서울">서울</option>
+					<option value="경기">경기</option>
+					<option value="기타">기타</option>
+				</select>
+				<br />
+				<label for="textid">text 입력</label>
+				<input type="text" id="textid" name="text_input" value="" placeholder="text input" />
+				<br />
+				<label for="passwordid">password 입력</label>
+				<input type="password" id="passwordid" name="pwd_input" value="" placeholder="password input" />
+				<br />
+				<label for="textareaid">textarea 입력</label>
+				<textarea name="text_area" id="textareaid" rows="5" cols="30" placeholder="textarea"></textarea>
+				<br />
+				<label for="fileid">파일 업로드하기</label>
+				<input type="file" id="fileid" name="file_upload" />
+
+				<!--
+					* input 태그의 type="hidden"은 레이블을 설정하지 않는다.
+					* type="hidden"은 브라우저에서 보여지지 않을 뿐 아니라,
+					* 사용자(user)를 대상(메인의 스크린리더 등)으로 하는 태그가 아니기 때문이다.
+				-->
+				<input type="hidden" name="hidden_input" value="히든 값" />
+			</fieldset>
+		</form>
+	</body>
+</html>

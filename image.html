@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>img 요소</title>
+	</head>
+	<body>
+		<!--
+			* src속성: 불러올 이미지 자원
+				src속성 값 => 상대경로나 절대경로(다시 강의로 설명함).
+				이미지와 관련된 확장자(.jpg/.png/.gif/.svg 등)의 파일만 불러온다.
+		-->
+		<h3>원본이미지</h3>
+		<img src="sample.jpg">
+		<br>
+		<!--
+			width 속성
+			height 속성
+			* width속성과 height속성을 지정하지 않으면 원본 이미지의 크기로 화면에 출력된다.
+			* width속성만 지정하면 height는 widht속성의 비율에 맞추어 자동으로 화면에 출력된다.
+			* height속성만 지정하면 width는 height속성의 비율에 맞추어 자동으로 화면에 출력된다.
+			* width속성과 height속성의 값은 숫자로 지정하고 단위는 픽셀(pixels, px)이다.
+			* width속성과 height속성의 값은 숫자로 지정하고 %를 단위로 넣을 수 있다.
+				예를 들면 width="50%"
+			* 물론 img요소의 width와 height는 CSS로 컨트롤 할 수 있다.
+		-->
+		<h3>이미지파일이 아닌 파일을 연결했을 경우</h3>
+		<img src="https://www.youtube.com/embed/xXyrdPkhwSE" width="100">
+		<br />
+		<h3>가로사이즈만 설정했을 경우(절대길이단위: 픽셀(px))</h3>
+		<img src="sample.jpg" width="100px">
+		<br />
+		<h3>가로사이즈만 설정했을 경우(상대길이단위: 퍼센트(%))</h3>
+		<img src="sample.jpg" width="50%">
+		<br />
+		<h3>세로사이즈만 설정했을 경우(상대길이단위: 퍼센트(%))</h3>
+		<img src="sample.jpg" height="100%">
+		<br />
+		<h3>세로사이즈만 설정했을 경우(절대길이단위: 픽셀(px))</h3>
+		<img src="sample.jpg" height="300px">
+		<br />
+		<!--
+			src속성의 값의 불러올 이미지 자원이 없거나, 잘못된 경로일 경우 alt속성을 지정할 수 있다.
+		-->
+		<h3>이미지 경로가 잘못되었을 경우-alt속성값이 있으면 이 값이 출력된다.</h3>
+		<img src="samplexxx.jpg" alt="샘플이미지">
+		<br />
+		<!--
+			title속성을 사용하면 사용자(user)가 이미지에 마우스를 올려놓았을 때 이미지를 설명하는 말풍선 역할을 할 수 있다.
+			title속성은 img요소에만 사용되는 것이 아니라 모든 요소(<br />,<hr />요소 제외)에 사용할 수 있음
+		-->
+		<h3>title속성-커서를 올려놓으면 title속성의 값이 말풍선으로 출력된다.</h3>
+		<img src="sample.jpg" title="샘플이미지">
+	</body>
+</html>

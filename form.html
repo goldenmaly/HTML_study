@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>form요소의 이해</title>
+    </head>
+    <body>
+        <form action="데이터를 전송할 위치" >
+            아이디 <input type="text">
+            <hr>
+            비밀번호 <input type="password"> 
+            <hr>
+            <button type="submit">로그인</button>
+            <button type="reset">새로고침</button>    
+            <button type="button">우편번호 검색</button>
+            <!-- 
+                [button type별 기능]
+                # submit : 이 요소가 포함되어 있는 form요소의 컨트롤의 값을 전송한다.
+                # reset : 이 요소가 포함되어 있는 form요소의 컨트롤의 값을 초기화한다.
+                # button : 유저가 클릭하면 어떠한 action을 유발시킨다.
+                            => 우리 용어로 "Javascript를 실행시킨다." 와 동일
+                
+                ## 반드시 form 요소 내에서 사용해야 하는 type은 submit아 reset이다.
+                => type이 'button'인 것은 어디서나 사용할 수 있다.
+                
+                ## button type의 기본값은 submit 이다. 
+            -->
+            <!-- 
+                [권장하지 않는 button]
+                이유
+                1. 용어와 맞지 않는다. input이라는 말과 button의 기능이 의미적으로 맞지 않는다.
+                2. 다른 html요소를 넣을 수 없어서 디자인의 한계가 있다.
+            -->
+                <input type="submit">
+                <input type="reset">
+                <input type="button" value="버튼">
+            <!--
+                데이터를 처리하는 개발자가 사용하는 컨트롤
+                - 화면에 보이지는 않지만 함께 전송해야하는 정보가 있을 때 사용함
+                - 정보를 처리하는 개발자가 사용함
+            --> 
+            <input type="hidden" value="개발자가 필요로 하는 값">
+        </form>
+    </body>
+</html>

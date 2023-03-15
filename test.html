@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>anchor요소</title>
+    </head>
+    <body>
+        <a href="https://www.naver.com">네이버로 이동하기</a>
+        <a href="https://www.google.com">구글로 이동하기</a>
+        <a href="https://daum.net">다음으로 이동하기</a>
+
+        <!--
+            target 속성 (attribute)
+            # 기본값 _self
+            # 새창뜨기 _blank
+                => new window 혹은 new tab
+        -->
+        <hr>
+        <a href="https://www.naver.com" target="_blank">네이버 새창뜨기 이동하기</a>
+        <h2>다운로드 기능</h2>
+        <a href="download.docx">워드문서 다운로드하기</a>
+        <a href="download.pdf" target="_blank">PDF 다운로드하기</a>
+        <h2>이메일 app 연동하기</h2>
+        <a href="mailto:goldenmaly@naver.com">이메일보내기</a>
+        <h2>전화 app 연동하기</h2>
+        <a href="tel:1234123">상담원과 통화하기</a>
+        <h2>중요 문법</h2>
+        <button type="button"><a href="https://www.naver.com"> 네이버로 이동하기</a></button>
+        <!--
+            button 요소 안에는 인터렉티브한 요소는 들어갈 수 없다.
+            anchor 요소 안에 버튼요소가 들어갈 수 없다.
+        -->
+        <label for="user-site">관련사이트 바로가기</label>
+            <select name="" id="user-site">
+                <optgroup label="관련사이트"></optgroup>
+                <option>
+                    <a href="https://www.naver.com">네이버</a>
+                </option>
+                <option selected>
+                    <a href="https://www.google.com">구글</a>
+                </option>
+            </select>
+    </body>
+</html>

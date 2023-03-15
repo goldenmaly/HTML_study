@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML FORM - Controls</title>
+	</head>
+	<body>
+		<h3>HTML Form 컨트롤(Controls)</h3>
+		<form>
+			<!--
+				* fieldset 요소는
+				* 여러개의 폼관련 요소를 그룹화시켜줍니다.
+				* 나중에 강의할 내용입니다.
+			-->
+			<!--
+				* legend 요소는
+				* 여러개의 폼관련 요소를 그룹화시킨 것이
+				* 어떠한 성격의 그룹인지 제목 형태로 보여줍니다.
+				* 나중에 강의할 내용입니다.
+			-->
+			<fieldset>
+
+				<!--
+					legend 요소는
+					fieldset으로 그룹핑한 레이블과  컨트롤의 제목에 해당합니다.
+					나중에 강의할 내용입니다.
+				-->
+				<legend>buttons(버튼)</legend>
+				<button type="button">button</button>
+				<br />
+				<button type="submit">submit button</button>
+				<br />
+				<button type="reset">reset button</button>
+				<br />
+				<hr />
+
+				<!--
+					input으로 만드는 button모양에서 버큰의 글자 설정
+					1. value속성을 사용하면, 원하는 글을 마크업할 수 있습니다.
+					2. value속성을 사용하지 않으면, 브라우저에서 지원하는 기본 글이 마크업됩니다.
+				-->
+				<input type="submit" />
+				<input type="submit" value="submit" />
+				<br />
+				<input type="reset" />
+				<input type="reset" value="reset" />
+				<!--
+					button 모양의 control를 선택할 때 input요소 보다는 button요소를 사용하는 것이 좋습니다.
+					이는 CSS를 적용할 때 더 편리하기 때문입니다.
+				-->
+			</fieldset>
+			<fieldset>
+
+				<!-- checkbox는 사용자(user)가 복수의 controls(checkbox)을 선택할 때 사용합니다. -->
+				<legend>checkboxes(체크박스)</legend>
+				<input type="checkbox" />HTML
+				<input type="checkbox" />CSS
+				<input type="checkbox" />웹디자인
+			</fieldset>
+			<fieldset>
+
+				<!-- radio는 사용자(user)가 오직 하나의  control(radio)을 선택할 때 사용합니다. -->
+				<!-- 오직 하나의 radio만이 선택되려면 name속성이 있어야 하고 name값의 value가 동일해야 합니다. -->
+				<legend>radio buttons(라디오버튼)</legend>
+				<input type="radio" name="chk_variable" value="HTML" />HTML
+				<input type="radio" name="chk_variable" value="CSS"  />CSS
+				<input type="radio" name="chk_variable" value="웹디자인" />웹디자인
+			</fieldset>
+			<fieldset>
+				<legend>slectboxes(목록상자)</legend>
+				<select name="select_variable">
+					<option value="서울">서울</option>
+					<option value="경기">경기</option>
+					<option value="기타">기타</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>text input(텍스트 입력)</legend>
+				<input type="text" value="" placeholder="text input" />
+				<br />
+				<input type="password" placeholder="password input" />
+				<br />
+				<textarea rows="5" cols="30" placeholder="textarea"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>file select(파일선택)</legend>
+				<input type="file" />
+			</fieldset>
+			<fieldset>
+				<legend>hidden control(히든 값)</legend>
+				<input type="hidden" />
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>컨트롤 요소를 마크업하기</title>
+    </head>
+    <body>
+        <input type="text">
+        <hr>
+        <input type="password">
+        <hr>
+        <input type="file">
+        <hr>
+        <!-- html에서 checked하는 요소는 단 2개뿐 -->
+        <input type="radio">
+        <input type="checkbox">
+        <hr>
+        <input type="text">
+        <hr>
+        <input type="password">
+        <hr>
+        <input type="file">
+        <hr>
+        <input type="radio">
+        <input type="checkbox">
+        <!-- type의 기본값은 text이다. -->
+        <input> <!-- 권장하지 않음. type이 너무 많아서 명시적으로 함 -->
+        <hr>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!-- 
+            # menu
+            # combobox
+            # select box
+            # select menu
+         -->
+
+         <select>
+            <option>서울</option>
+            <option>대전</option>
+            <option>제주</option>
+         </select>
+
+         <!-- 
+            #option요소의 content로 html tag를 마크업하더라도 생략된다.
+         -->
+
+         <select>
+            <option>
+                <h1>서울</h1>
+            </option>
+            <option>제주</option>
+            <option>부산</option>
+         </select>
+         <hr>
+         <select>
+            <optgroup label="수도권"></optgroup>
+                <option>서울</option>
+                <option>수원</option>
+            <optgroup label="지방"></optgroup>
+                <option>대전</option>
+                <option>제주</option>
+         </select>
+        <p>여기서부터 실습</p>
+         <select>
+            <option>서울</option>
+            <option>대전</option>
+            <option>제주</option>
+         </select>
+         <hr>
+         <select>
+            <optgroup label="수도권"></optgroup>
+                <option>서울</option>
+                <option>인천</option>
+                <option>부천</option>
+            <optgroup label="해외"></optgroup>
+                <option>일본</option>
+                <option>미국</option>
+         </select>
+    </body>
+</html>
